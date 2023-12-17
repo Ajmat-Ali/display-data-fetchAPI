@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DISPLAYING USER DATA</title>
+    <style>
+      #container {
+        /* border: 2px solid red; */
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        text-align: center;
+        gap: 20px;
+        width: 80%;
+        margin: auto;
+      }
+      .card{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 10px;
+        /* background-color: #eee; */
+      }
+      #avatar{
+        border-radius: 50%;
+      }
+      .names{
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+        color: rgb(219, 127, 7);
+      }
+      .names span{
+        margin-right: 5px;
+      }
+      .email{
+        color: rgb(8, 124, 8);
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .id{
+        font-weight: bold;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="Fetch-Users">Fetch Users</button>
+    <div id="container"></div>
+  </body>
+  <script src="index.js"></script>
+</html>
